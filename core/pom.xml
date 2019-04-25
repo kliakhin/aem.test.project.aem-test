@@ -167,7 +167,9 @@
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
-        </dependency>
+        </dependency>klsdjfsd
+        sdfsd
+        sdfsd
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.scr.annotations</artifactId>
