@@ -1,0 +1,12 @@
+<sly data-sly-use.somename="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${somename.all @ categories='aem-test.custom'}"/>
+
+<h1 class="custom-header">Header</h1>
+
+<h3 class="service-text">
+    <pre data-sly-use.first="aem.test.project.core.models.FirstComponent">Text from fist component:${first.text}</pre>
+</h3>
+
+<div class="input-text">
+    <sly data-sly-resource="${'text' @ resourceType='/components/content/text'}"/>
+</div>

@@ -1,0 +1,16 @@
+<sly data-sly-use.model="aem.test.project.core.models.weather.WeatherModel">
+    <sly data-sly-test="${!model.valid}">
+        <h1>${model.errorMessage}</h1>
+    </sly>
+    <sly data-sly-test="${model.valid}">
+        <h1>Today in ${model.weather.name}:</h1>
+        <h2>Temperature:</h2>
+        <h3>Now: ${model.weather.temperature}</h3>
+        <h3>Max: ${model.weather.maxTemperature}</h3>
+        <h3>Min: ${model.weather.minTemperature}</h3>
+        <h2>Wind Sped: ${model.weather.windSpeed}</h2>
+        <h2>Pressure: ${model.weather.pressure}</h2>
+        <h2>Visibility: ${model.weather.visibility}</h2>
+        <button type="button"><a href="https://www.google.com.ua/maps/place/${model.weather.name}">Watch on Google Maps</a></button>
+    </sly>
+</sly>

@@ -22,7 +22,6 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
-import org.apache.sling.api.resource.ValueMap;
 import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 
@@ -40,7 +39,7 @@ import java.io.IOException;
            property={
                    Constants.SERVICE_DESCRIPTION + "=Simple Demo Servlet",
                    "sling.servlet.methods=" + HttpConstants.METHOD_GET,
-                   "sling.servlet.resourceTypes="+ "aem-test/components/structure/page",
+                   "sling.servlet.resourceTypes="+ "aem-test/models/structure/page",
                    "sling.servlet.extensions=" + "txt"
            })
 public class SimpleServlet extends SlingSafeMethodsServlet {
