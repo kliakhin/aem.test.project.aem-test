@@ -1,0 +1,22 @@
+<sly data-sly-use.somename="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-use.bodytemplate="supertext-template.html"/>
+<sly data-sly-call="${somename.all @ categories='aem-test.custom'}"/>
+<sly data-sly-use.textmodel="aem.test.project.core.models.TextModel"/>
+<sly data-sly-call="${bodytemplate.body @ model=textmodel}"/>
+
+<div>
+    <sly data-sly-resource="${'text' @ resourceType='aem-test/components/content/text'}" />
+</div>
+
+<div>
+    <sly data-sly-resource="${'title' @ resourceType='aem-test/components/content/title'}" />
+</div>
+
+<div>
+    <sly data-sly-resource="${'image' @ resourceType='aem-test/components/content/image'}" />
+</div>
+
+
+
+
+
